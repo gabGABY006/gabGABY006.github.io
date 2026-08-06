@@ -4,11 +4,11 @@ description: A retro pixel-art Jigglypuff Pokémon trading card designed in Figm
 publishDate: 'Aug 05 2026'
 seo:
   image:
-    src: '../../assets/images/Mi%20primer%20proyecto%20FIGMA.png'
+    src: '../../assets/images/primerProyectoFigma.png'
     alt: Jigglypuff Figma Trading Card Preview
 ---
 
-![Jigglypuff Figma Trading Card Preview](../../assets/images/Mi%20primer%20proyecto%20FIGMA.png)
+![Jigglypuff Figma Trading Card Preview](../../assets/images/primerProyectoFigma.png)
 
 **Project Overview:**
 This custom retro-inspired Jigglypuff trading card was my very first hands-on UI/UX design project created entirely in Figma! Built as part of the **Codédex UI/UX Course**, this piece combines nostalgic pixel-art aesthetics with custom humorous move descriptions and a signature pink color palette.
