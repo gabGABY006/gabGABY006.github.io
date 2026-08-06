@@ -4,10 +4,11 @@ description: My very first UI/UX project created in Figma—a custom Jigglypuff 
 publishDate: 'Aug 05 2026'
 seo:
   image:
-    src: '../assets/images/Mi primer proyecto FIGMA.png'
+    src: '../../assets/images/Mi primer proyecto FIGMA.png'
     alt: Jigglypuff Figma Trading Card Preview
 ---
 
+![Jigglypuff Figma Trading Card Preview](../../assets/images/Mi primer proyecto FIGMA.png)
 
 **Project Overview:**
 This custom Jigglypuff trading card was my very first hands-on design project created entirely in Figma! Built as part of the **Codédex UI/UX Course**, this project served as a fun, creative sandbox to explore Figma’s primary toolset, visual hierarchy, and component structuring.
