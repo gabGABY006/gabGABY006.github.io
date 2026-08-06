@@ -1,4 +1,4 @@
-import avatar from '../assets/images/avatar.gif';
+import avatar from '../assets/images/about.jpg';
 import hero from '../assets/images/hero.jpg';
 import type { SiteConfig } from '../types';
 
