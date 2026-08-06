@@ -62,11 +62,11 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'LinkedIn',
-            href: 'https://linkedin.com/'
+            href: 'https://www.linkedin.com/in/gabriella-michelle-castro-cuello-257283363/'
         },
         {
             text: 'Instagram',
-            href: 'https://instagram.com/'
+            href: 'https://www.instagram.com/gabycas2007/'
         }
     ],
     hero: {
