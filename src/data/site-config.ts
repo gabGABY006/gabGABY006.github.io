@@ -26,10 +26,10 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Blog',
-            href: '/blog'
+            href: 'https://github.com/gabgaby006'
         },
         {
-            text: 'Tags',
+            text: 'Github',
             href: '/tags'
         }
     ],
