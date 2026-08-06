@@ -6,19 +6,23 @@ const siteConfig: SiteConfig = {
     website: 'https://gabGABY006.github.io',
     avatar: {
         src: avatar,
-        alt: 'Ethan Donovan'
+        alt: 'Gabriella Castro'
     },
     title: 'Gabriella Castro',
-    subtitle: 'My personal portfolio :D',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    subtitle: 'Systems Engineering Student & Developer',
+    description: 'Personal portfolio and tech blog of Gabriella Castro. Exploring software engineering, algorithms, web development, and creative builds.',
     image: {
         src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        alt: 'Gabriella Castro Portfolio'
     },
     headerNavLinks: [
         {
             text: 'Home',
             href: '/'
+        },
+        {
+            text: 'About',
+            href: '/about'
         },
         {
             text: 'Projects',
@@ -29,7 +33,7 @@ const siteConfig: SiteConfig = {
             href: '/blog'
         },
         {
-            text: 'Github',
+            text: 'GitHub',
             href: 'https://github.com/gabgaby006'
         }
     ],
@@ -39,40 +43,44 @@ const siteConfig: SiteConfig = {
             href: '/about'
         },
         {
+            text: 'Projects',
+            href: '/projects'
+        },
+        {
+            text: 'Blog',
+            href: '/blog'
+        },
+        {
             text: 'Contact',
             href: '/contact'
-        },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
         }
     ],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
+            text: 'GitHub',
+            href: 'https://github.com/gabgaby006'
+        },
+        {
+            text: 'LinkedIn',
+            href: 'https://linkedin.com/'
         },
         {
             text: 'Instagram',
             href: 'https://instagram.com/'
-        },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
         }
     ],
     hero: {
         title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence.\nMy approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products.\nI have a profound appreciation for top-notch software, visual design, and the principles of product-led growth.\n\nFeel free to explore some of my coding endeavors on [GitHub](https://github.com/JustGoodUI/dante-astro-theme) or follow me on [Twitter/X](https://twitter.com/justgoodui).",
+        text: "I'm **Gabriella Castro**, a Systems Engineering student passionate about software development, problem-solving, and building web experiences.\n\nWhen I'm not coding or solving algorithmic challenges, I enjoy working on personal projects, refining design ideas, and learning new technology stacks.\n\nFeel free to explore my open-source code on [GitHub](https://github.com/gabgaby006), check out my latest work on my [Projects](/projects) page, or read through my posts on the [Blog](/blog)!",
         image: {
             src: hero,
-            alt: 'A person sitting at a desk in front of a computer'
+            alt: 'Workspace setup'
         },
         actions: [
+            {
+                text: 'View Projects',
+                href: '/projects'
+            },
             {
                 text: 'Get in Touch',
                 href: '/contact'
@@ -81,8 +89,8 @@ const siteConfig: SiteConfig = {
     },
     subscribe: {
         enabled: true,
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
+        title: 'Subscribe to Updates',
+        text: 'Get notified whenever I publish new blog posts, project write-ups, or technical notes.',
         form: {
             action: '#'
         }
