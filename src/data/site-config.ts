@@ -8,8 +8,8 @@ const siteConfig: SiteConfig = {
         src: avatar,
         alt: 'Ethan Donovan'
     },
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
+    title: 'Gabriella Castro',
+    subtitle: 'My personal portfolio :D',
     description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
     image: {
         src: '/dante-preview.jpg',
@@ -26,11 +26,11 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Blog',
-            href: 'https://github.com/gabgaby006'
+            href: '/blog'
         },
         {
             text: 'Github',
-            href: '/tags'
+            href: 'https://github.com/gabgaby006'
         }
     ],
     footerNavLinks: [
