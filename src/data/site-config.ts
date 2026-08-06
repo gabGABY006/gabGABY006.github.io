@@ -9,8 +9,8 @@ const siteConfig: SiteConfig = {
         alt: 'Gabriella Castro'
     },
     title: 'Gabriella Castro',
-    subtitle: 'Systems Engineering Student & Developer',
-    description: 'Personal portfolio and tech blog of Gabriella Castro. Exploring software engineering, algorithms, web development, and creative builds.',
+    subtitle: 'Systems Engineering Student | UX/UI Enthusiast & Developer',
+    description: 'Personal portfolio and tech blog of Gabriella Castro. Exploring UX/UI design, software engineering, Figma creations, algorithms, and web development.',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Gabriella Castro Portfolio'
@@ -71,7 +71,7 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Gabriella Castro**, a Systems Engineering student passionate about software development, problem-solving, and building web experiences.\n\nWhen I'm not coding or solving algorithmic challenges, I enjoy working on personal projects, refining design ideas, and learning new technology stacks.\n\nFeel free to explore my open-source code on [GitHub](https://github.com/gabgaby006), check out my latest work on my [Projects](/projects) page, or read through my posts on the [Blog](/blog)!",
+        text: "I'm **Gabriella Castro**, a Systems Engineering student passionate about **UX/UI design**, software development, and creative digital projects.\n\nWhen I'm not solving algorithmic challenges, you'll find me designing UI concepts in **Figma** (like custom Pokémon-style cards!), following **Formula 1**, or experimenting with new web tech stacks.\n\nFeel free to explore my open-source code on [GitHub](https://github.com/gabgaby006), check out my latest work on my [Projects](/projects) page, or read through my posts on the [Blog](/blog)!",
         image: {
             src: hero,
             alt: 'Workspace setup'
