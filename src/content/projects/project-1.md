@@ -4,7 +4,7 @@ description: My very first UI/UX project created in Figma—a custom Jigglypuff 
 publishDate: 'Aug 05 2026'
 seo:
   image:
-    src: '../../assets/images/Mi primer proyecto FIGMA.png'
+    src: '../../assets/images/Mi%20primer%20proyecto%20FIGMA.png'
     alt: Jigglypuff Figma Trading Card Preview
 ---
 
