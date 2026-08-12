@@ -63,8 +63,8 @@ html.dark {
 */
 
 @theme inline {
-    --font-sans: 'Inter Variable', sans-serif;
-    --font-serif: 'Newsreader Variable', serif;
+    --font-sans: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    --font-serif: 'Georgia', 'Times New Roman', serif;
     --text-color-main: var(--text-main);
     --background-color-main: var(--bg-main);
     --background-color-muted: var(--bg-muted);
@@ -80,6 +80,7 @@ html.dark {
             var(--bg-main);
         color: var(--text-main);
         letter-spacing: 0.01em;
+        font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
     }
 
     body,
@@ -107,7 +108,8 @@ html.dark {
     h4,
     h5,
     h6 {
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+        letter-spacing: 0.02em;
     }
 }
 
