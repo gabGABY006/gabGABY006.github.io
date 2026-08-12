@@ -21,8 +21,12 @@ const siteConfig: SiteConfig = {
             href: '/'
         },
         {
-            text: 'About',
-            href: '/about'
+            text: 'Acerca',
+            href: '/acerca'
+        },
+        {
+            text: 'Evidencias',
+            href: '/evidencias'
         },
         {
             text: 'Projects',
@@ -39,8 +43,12 @@ const siteConfig: SiteConfig = {
     ],
     footerNavLinks: [
         {
-            text: 'About',
-            href: '/about'
+            text: 'Acerca',
+            href: '/acerca'
+        },
+        {
+            text: 'Evidencias',
+            href: '/evidencias'
         },
         {
             text: 'Projects',
