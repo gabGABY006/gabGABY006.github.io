@@ -1,46 +1,43 @@
 ---
-import { getCollection } from 'astro:content';
 import Button from '../components/Button.astro';
 import Hero from '../components/Hero.astro';
-import PostPreview from '../components/PostPreview.astro';
-import ProjectPreview from '../components/ProjectPreview.astro';
 import siteConfig from '../data/site-config';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { sortItemsByDateDesc } from '../utils/data-utils';
-
-const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
-const featuredPosts = posts.filter(({ data }) => data.isFeatured);
-
-const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
-const featuredProjects = projects.filter(({ data }) => data.isFeatured);
 ---
 
 <BaseLayout description={siteConfig.description}>
     <Hero {...siteConfig.hero} />
-    {
-        featuredProjects?.length > 0 && (
-            <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">Proyectos</h2>
-                {featuredProjects.map((project) => (
-                    <ProjectPreview project={project} class="mb-10 sm:mb-12" headingLevel="h3" />
-                ))}
-                <div class="mt-12 sm:mt-16">
-                    <Button href="/projects">Ver todos los proyectos</Button>
-                </div>
+
+    <section class="mb-16 sm:mb-24">
+        <div class="mb-8 flex items-end justify-between gap-4">
+            <div>
+                <p class="mb-2 text-xs font-medium uppercase tracking-[0.25em] text-main/70">Explora</p>
+                <h2 class="font-serif text-2xl italic sm:text-3xl">Evidencias</h2>
             </div>
-        )
-    }
-    {
-        featuredPosts?.length > 0 && (
-            <div class="mb-16 sm:mb-24">
-                <h2 class="mb-12 font-serif text-xl italic sm:mb-16 sm:text-2xl">Escritos</h2>
-                {featuredPosts.map((post) => (
-                    <PostPreview post={post} class="mb-10 sm:mb-12" headingLevel="h3" />
-                ))}
-                <div class="mt-12 sm:mt-16">
-                    <Button href="/blog">Ver todos los posts</Button>
-                </div>
-            </div>
-        )
-    }
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-3">
+            <a href="/evidencias/personal" class="soft-panel group flex h-full flex-col p-5 text-left no-underline transition hover:-translate-y-1">
+                <span class="mb-3 inline-flex w-fit rounded-full border border-main/40 bg-main/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-main/80">Personal</span>
+                <h3 class="font-serif text-xl leading-tight text-main">Trabajos más íntimos</h3>
+                <p class="mt-2 text-sm leading-relaxed text-main/80">Bocetos, experimentos y piezas creativas que muestran mi proceso personal.</p>
+            </a>
+
+            <a href="/evidencias/proyecto" class="soft-panel group flex h-full flex-col p-5 text-left no-underline transition hover:-translate-y-1">
+                <span class="mb-3 inline-flex w-fit rounded-full border border-main/40 bg-main/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-main/80">Proyecto</span>
+                <h3 class="font-serif text-xl leading-tight text-main">Ideas con propósito</h3>
+                <p class="mt-2 text-sm leading-relaxed text-main/80">Diseños y entregas más relevantes de proyectos de diseño y desarrollo.</p>
+            </a>
+
+            <a href="/evidencias/clase" class="soft-panel group flex h-full flex-col p-5 text-left no-underline transition hover:-translate-y-1">
+                <span class="mb-3 inline-flex w-fit rounded-full border border-main/40 bg-main/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-main/80">Clase</span>
+                <h3 class="font-serif text-xl leading-tight text-main">Aprendizajes</h3>
+                <p class="mt-2 text-sm leading-relaxed text-main/80">Actividades y ejercicios realizados en clase para seguir creciendo.</p>
+            </a>
+        </div>
+
+        <div class="mt-8">
+            <Button href="/evidencias">Ir a evidencias</Button>
+        </div>
+    </section>
 </BaseLayout>

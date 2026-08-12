@@ -8,16 +8,20 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-    --text-main: #3b0b1e; /* deep pink/maroon for readable text */
-    --bg-main: #fff0f6; /* pale pink background */
-    --bg-muted: #ffe6f3; /* slightly darker pale pink */
-    --border-main: #ff6fa3; /* bright pink accent */
+    --text-main: #4b1736;
+    --bg-main: #fff7fb;
+    --bg-muted: #ffeaf4;
+    --border-main: #f06aa8;
+    --soft-pink: #ffdfe9;
+    --soft-pink-strong: #ffc0d9;
 }
 html.dark {
-    --text-main: #fff5fb; /* light pink/white text */
-    --bg-main: #2a0020; /* dark pink/magenta background */
-    --bg-muted: #3a1328; /* muted dark pink */
-    --border-main: #ff6fa3; /* bright pink accent */
+    --text-main: #ffe9f4;
+    --bg-main: #1c0b1d;
+    --bg-muted: #2d1428;
+    --border-main: #ff8ac1;
+    --soft-pink: #4c243c;
+    --soft-pink-strong: #66324f;
 }
 
 /* Cyan */
@@ -59,6 +63,44 @@ html.dark {
     --background-color-main: var(--bg-main);
     --background-color-muted: var(--bg-muted);
     --border-color-main: var(--border-main);
+}
+
+@layer base {
+    body {
+        background:
+            radial-gradient(circle at top, rgba(255, 184, 214, 0.45), transparent 40%),
+            linear-gradient(180deg, rgba(255, 255, 255, 0.4), transparent 25%),
+            var(--bg-main);
+        color: var(--text-main);
+    }
+
+    ::selection {
+        background: rgba(240, 106, 168, 0.25);
+    }
+
+    a,
+    button {
+        transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease,
+            border-color 0.2s ease,
+            opacity 0.2s ease;
+    }
+}
+
+@layer components {
+    .soft-panel {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 230, 243, 0.9));
+        border: 1px solid rgba(240, 106, 168, 0.32);
+        border-radius: 1.5rem;
+        box-shadow: 0 14px 32px rgba(179, 77, 122, 0.09);
+        backdrop-filter: blur(8px);
+    }
+
+    html.dark .soft-panel {
+        background: linear-gradient(135deg, rgba(61, 28, 49, 0.92), rgba(70, 34, 59, 0.9));
+        box-shadow: 0 14px 32px rgba(18, 8, 15, 0.35);
+    }
 }
 
 @layer utilities {

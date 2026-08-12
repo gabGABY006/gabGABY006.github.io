@@ -2,10 +2,24 @@
 title: "Evidencias"
 ---
 
-Bienvenido a la sección de evidencias. Aquí encontrarás trabajos y pruebas agrupadas en las siguientes categorías:
+Bienvenido a la sección de evidencias. Aquí encontrarás trabajos y pruebas agrupadas por categoría:
 
-- [Proyecto](/evidencias/proyecto)
-- [Personal](/evidencias/personal)
-- [Clase](/evidencias/clase)
+<details open>
+  <summary>Proyecto</summary>
+  
+  - [Ver trabajos de proyecto](/evidencias/proyecto)
+</details>
 
-Selecciona una categoría para ver las entradas correspondientes.
+<details>
+  <summary>Personal</summary>
+  
+  - [Ver trabajos personales](/evidencias/personal)
+</details>
+
+<details>
+  <summary>Clase</summary>
+  
+  - [Ver trabajos de clase](/evidencias/clase)
+</details>
+
+Selecciona una categoría para explorar las entradas correspondientes.

@@ -29,14 +29,6 @@ const siteConfig: SiteConfig = {
             href: '/evidencias'
         },
         {
-            text: 'Proyectos',
-            href: '/projects'
-        },
-        {
-            text: 'Blog',
-            href: '/blog'
-        },
-        {
             text: 'GitHub',
             href: 'https://github.com/gabgaby006'
         }
@@ -49,14 +41,6 @@ const siteConfig: SiteConfig = {
         {
             text: 'Evidencias',
             href: '/evidencias'
-        },
-        {
-            text: 'Proyectos',
-            href: '/projects'
-        },
-        {
-            text: 'Blog',
-            href: '/blog'
         },
         {
             text: 'Contacto',
@@ -78,16 +62,16 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: '¡Hola! Bienvenido a mi rincón de la web.',
-        text: "Soy **Gabriella Castro**, estudiante de Ingeniería de Sistemas apasionada por el **diseño UX/UI**, el desarrollo de software y los proyectos digitales creativos.\n\nCuando no estoy resolviendo desafíos algorítmicos, me encontrarás diseñando conceptos de interfaz en **Figma** (como cartas estilo Pokémon personalizadas), siguiendo la **Fórmula 1** o experimentando con nuevas pilas tecnológicas web.\n\nSi quieres, explora mi código abierto en [GitHub](https://github.com/gabgaby006), revisa mi trabajo más reciente en la página de [Proyectos](/projects) o lee mis publicaciones en el [Blog](/blog)!",
+        title: '¡Hola! Bienvenido a mi rincón creativo.',
+        text: "Soy **Gabriella Castro**, estudiante de Ingeniería de Sistemas apasionada por el **diseño UX/UI**, el desarrollo de software y los proyectos digitales con personalidad.\n\nAquí encontrarás ideas, exploraciones visuales y trabajos que reflejan mi estilo: Figma, creatividad, color y un toque muy rosa.\n\nPuedes revisar mis trabajos en [Evidencias](/evidencias), seguir mi código en [GitHub](https://github.com/gabgaby006) o escribirme por [Contacto](/contact).",
         image: {
             src: hero,
             alt: 'Configuración del espacio de trabajo'
         },
         actions: [
             {
-                text: 'Ver proyectos',
-                href: '/projects'
+                text: 'Ver evidencias',
+                href: '/evidencias'
             },
             {
                 text: 'Ponte en contacto',
