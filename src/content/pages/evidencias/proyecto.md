@@ -2,4 +2,8 @@
 title: "Proyecto"
 ---
 
-Entradas de la categoría "Proyecto". Añade aquí documentación y resultados de proyectos relevantes.
+Esta sección está lista para guardar ideas, trabajos y entregas importantes de proyectos.
+
+> Ups, aún no hay nada aquí… pero espera para ser sorprendido.
+
+Pronto llegarán proyectos, exploraciones y resultados que valen la pena compartir.

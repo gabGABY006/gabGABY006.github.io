@@ -4,6 +4,8 @@ title: "Personal"
 
 Entradas personales, bocetos y trabajos experimentales que no pertenecen a un proyecto formal.
 
+> Ups, aún no hay nada aquí… pero espera para ser sorprendido.
+
 ## Proyecto destacado
 
 - [Jigglypuff Trading Card: First Figma Design](/projects/project-1)

@@ -2,7 +2,7 @@
 title: "Evidencias"
 ---
 
-Bienvenido a la sección de evidencias. Aquí encontrarás trabajos y pruebas agrupadas por categoría:
+Bienvenido a la sección de evidencias. Aquí encontrarás trabajos, ideas y procesos agrupados por categoría:
 
 <details open>
   <summary>Proyecto</summary>
@@ -21,5 +21,7 @@ Bienvenido a la sección de evidencias. Aquí encontrarás trabajos y pruebas ag
   
   - [Ver trabajos de clase](/evidencias/clase)
 </details>
+
+> Ups, aún no hay nada aquí… pero espera para ser sorprendido.
 
 Selecciona una categoría para explorar las entradas correspondientes.
