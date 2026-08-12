@@ -9,19 +9,19 @@ const siteConfig: SiteConfig = {
         alt: 'Gabriella Castro'
     },
     title: 'Gabriella Castro',
-    subtitle: 'Systems Engineering Student | UX/UI Enthusiast & Developer',
-    description: 'Personal portfolio and tech blog of Gabriella Castro. Exploring UX/UI design, software engineering, Figma creations, algorithms, and web development.',
+    subtitle: 'Estudiante de Ingeniería de Sistemas | Entusiasta y desarrolladora UX/UI',
+    description: 'Portafolio personal y blog tecnológico de Gabriella Castro. Explorando diseño UX/UI, ingeniería de software, creaciones en Figma, algoritmos y desarrollo web.',
     image: {
         src: '/dante-preview.jpg',
-        alt: 'Gabriella Castro Portfolio'
+        alt: 'Portafolio de Gabriella Castro'
     },
     headerNavLinks: [
         {
-            text: 'Home',
+            text: 'Inicio',
             href: '/'
         },
         {
-            text: 'Acerca',
+            text: 'Acerca de',
             href: '/acerca'
         },
         {
@@ -29,7 +29,7 @@ const siteConfig: SiteConfig = {
             href: '/evidencias'
         },
         {
-            text: 'Projects',
+            text: 'Proyectos',
             href: '/projects'
         },
         {
@@ -43,7 +43,7 @@ const siteConfig: SiteConfig = {
     ],
     footerNavLinks: [
         {
-            text: 'Acerca',
+            text: 'Acerca de',
             href: '/acerca'
         },
         {
@@ -51,7 +51,7 @@ const siteConfig: SiteConfig = {
             href: '/evidencias'
         },
         {
-            text: 'Projects',
+            text: 'Proyectos',
             href: '/projects'
         },
         {
@@ -59,7 +59,7 @@ const siteConfig: SiteConfig = {
             href: '/blog'
         },
         {
-            text: 'Contact',
+            text: 'Contacto',
             href: '/contact'
         }
     ],
@@ -78,27 +78,27 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Gabriella Castro**, a Systems Engineering student passionate about **UX/UI design**, software development, and creative digital projects.\n\nWhen I'm not solving algorithmic challenges, you'll find me designing UI concepts in **Figma** (like custom Pokémon-style cards!), following **Formula 1**, or experimenting with new web tech stacks.\n\nFeel free to explore my open-source code on [GitHub](https://github.com/gabgaby006), check out my latest work on my [Projects](/projects) page, or read through my posts on the [Blog](/blog)!",
+        title: '¡Hola! Bienvenido a mi rincón de la web.',
+        text: "Soy **Gabriella Castro**, estudiante de Ingeniería de Sistemas apasionada por el **diseño UX/UI**, el desarrollo de software y los proyectos digitales creativos.\n\nCuando no estoy resolviendo desafíos algorítmicos, me encontrarás diseñando conceptos de interfaz en **Figma** (como cartas estilo Pokémon personalizadas), siguiendo la **Fórmula 1** o experimentando con nuevas pilas tecnológicas web.\n\nSi quieres, explora mi código abierto en [GitHub](https://github.com/gabgaby006), revisa mi trabajo más reciente en la página de [Proyectos](/projects) o lee mis publicaciones en el [Blog](/blog)!",
         image: {
             src: hero,
-            alt: 'Workspace setup'
+            alt: 'Configuración del espacio de trabajo'
         },
         actions: [
             {
-                text: 'View Projects',
+                text: 'Ver proyectos',
                 href: '/projects'
             },
             {
-                text: 'Get in Touch',
+                text: 'Ponte en contacto',
                 href: '/contact'
             }
         ]
     },
     subscribe: {
         enabled: true,
-        title: 'Subscribe to Updates',
-        text: 'Get notified whenever I publish new blog posts, project write-ups, or technical notes.',
+        title: 'Suscríbete a las actualizaciones',
+        text: 'Recibe avisos cuando publique nuevos artículos, escritos de proyectos o notas técnicas.',
         form: {
             action: '#'
         }
