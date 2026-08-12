@@ -8,26 +8,26 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-    --text-main: #4b1736;
-    --bg-main: #fff7fb;
-    --bg-muted: #ffeaf4;
-    --border-main: #f06aa8;
-    --soft-pink: #ffdfe9;
-    --soft-pink-strong: #ffc0d9;
-    --panel-pink: rgba(255, 255, 255, 0.72);
-    --panel-pink-deep: rgba(255, 231, 245, 0.9);
-    --shadow-pink: rgba(255, 122, 176, 0.18);
+    --text-main: #5a1d3d;
+    --bg-main: #fff5fa;
+    --bg-muted: #ffe2f0;
+    --border-main: #e45ea0;
+    --soft-pink: #ffd9ea;
+    --soft-pink-strong: #ffb5d7;
+    --panel-pink: rgba(255, 255, 255, 0.8);
+    --panel-pink-deep: rgba(255, 233, 244, 0.98);
+    --shadow-pink: rgba(229, 79, 149, 0.25);
 }
 html.dark {
-    --text-main: #ffe8f3;
-    --bg-main: #1a0d18;
-    --bg-muted: #2c1427;
-    --border-main: #ff9dc9;
-    --soft-pink: #4c243c;
-    --soft-pink-strong: #66324f;
-    --panel-pink: rgba(56, 22, 42, 0.82);
-    --panel-pink-deep: rgba(72, 29, 56, 0.9);
-    --shadow-pink: rgba(255, 134, 184, 0.12);
+    --text-main: #ffeef7;
+    --bg-main: #220d1a;
+    --bg-muted: #3d1b2d;
+    --border-main: #ff9ec9;
+    --soft-pink: #4d2740;
+    --soft-pink-strong: #683a55;
+    --panel-pink: rgba(71, 24, 49, 0.88);
+    --panel-pink-deep: rgba(98, 39, 68, 0.96);
+    --shadow-pink: rgba(255, 152, 197, 0.18);
 }
 
 /* Cyan */
@@ -74,13 +74,15 @@ html.dark {
 @layer base {
     body {
         background:
-            radial-gradient(circle at top, rgba(255, 196, 220, 0.5), transparent 32%),
-            radial-gradient(circle at bottom right, rgba(255, 167, 206, 0.15), transparent 20%),
-            linear-gradient(180deg, rgba(255, 255, 255, 0.38), transparent 22%),
+            radial-gradient(circle at top left, rgba(255, 184, 212, 0.9), transparent 30%),
+            radial-gradient(circle at bottom right, rgba(255, 153, 202, 0.22), transparent 20%),
+            radial-gradient(circle at center, rgba(255, 224, 239, 0.55), transparent 45%),
+            linear-gradient(180deg, rgba(255, 255, 255, 0.42), transparent 20%),
             var(--bg-main);
         color: var(--text-main);
         letter-spacing: 0.01em;
         font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+        background-attachment: fixed;
     }
 
     body,
@@ -115,11 +117,11 @@ html.dark {
 
 @layer components {
     .soft-panel {
-        background: linear-gradient(135deg, var(--panel-pink), var(--panel-pink-deep));
-        border: 1px solid rgba(240, 106, 168, 0.32);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.82), rgba(255, 228, 240, 0.96));
+        border: 1px solid rgba(228, 94, 160, 0.34);
         border-radius: 1.5rem;
-        box-shadow: 0 14px 32px var(--shadow-pink);
-        backdrop-filter: blur(10px);
+        box-shadow: 0 16px 36px var(--shadow-pink), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
         position: relative;
     }
 
@@ -128,12 +130,18 @@ html.dark {
         position: absolute;
         inset: 10px;
         border-radius: 1.2rem;
-        border: 1px dashed rgba(240, 106, 168, 0.2);
+        border: 1px dashed rgba(228, 94, 160, 0.26);
         pointer-events: none;
     }
 
+    html.dark .soft-panel {
+        background: linear-gradient(135deg, rgba(82, 34, 58, 0.9), rgba(111, 47, 77, 0.96));
+        border-color: rgba(255, 158, 201, 0.38);
+        box-shadow: 0 18px 36px rgba(255, 146, 195, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
     html.dark .soft-panel::before {
-        border-color: rgba(255, 157, 201, 0.2);
+        border-color: rgba(255, 158, 201, 0.25);
     }
 }
 
