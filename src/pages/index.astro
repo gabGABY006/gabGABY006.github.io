@@ -1,4 +1,5 @@
 ---
+import heroImage from '../assets/images/hero.jpg';
 import videoIntro from '../assets/images/video_intro.mp4';
 import Button from '../components/Button.astro';
 import Hero from '../components/Hero.astro';
@@ -13,19 +14,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div class="soft-panel relative overflow-hidden p-3.5 sm:p-5">
             <div class="absolute inset-4 rounded-[1.9rem] border border-main/15 bg-gradient-to-br from-pink-200/20 via-transparent to-pink-300/10" aria-hidden="true" />
             <div class="relative overflow-hidden rounded-[1.5rem] border border-main/20 bg-main/30 shadow-[0_18px_40px_rgba(255,122,176,0.15)]">
-                <div class="absolute top-4 left-4 z-10 inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/20 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.26em] text-main backdrop-blur-sm">
-                    <span class="h-2 w-2 rounded-full bg-pink-400" aria-hidden="true" />
-                    Intro
+                <div id="intro-video-wrap" class="relative aspect-video w-full overflow-hidden">
+                    <div class="absolute inset-0 z-0 bg-cover bg-center" style={`background-image: url(${heroImage.src});`} aria-hidden="true" />
+                    <div class="absolute inset-0 z-0 bg-gradient-to-t from-[#1e0c18]/75 via-[#1e0c18]/20 to-[#fff7fb]/10" aria-hidden="true" />
+
+                    <div class="absolute inset-x-0 top-0 z-20 flex items-center justify-between p-4 sm:p-5">
+                        <span class="inline-flex items-center gap-2 rounded-full border border-white/40 bg-white/15 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.26em] text-white backdrop-blur-sm">
+                            <span class="h-2 w-2 rounded-full bg-pink-300" aria-hidden="true" />
+                            Video de introducción
+                        </span>
+                        <button
+                            id="play-intro-video"
+                            type="button"
+                            class="inline-flex items-center justify-center rounded-full border border-white/50 bg-white/20 px-4 py-2 text-sm font-medium text-white shadow-lg backdrop-blur-sm transition hover:scale-[1.02] hover:bg-white/30"
+                        >
+                            Reproducir
+                        </button>
+                    </div>
+
+                    <video
+                        id="intro-video"
+                        class="absolute inset-0 z-10 hidden h-full w-full object-cover"
+                        src={videoIntro}
+                        playsinline
+                        muted
+                        loop
+                        controls
+                    />
                 </div>
-                <video
-                    class="block h-[300px] w-full object-cover sm:h-[440px]"
-                    src={videoIntro}
-                    playsinline
-                    autoplay
-                    muted
-                    loop
-                    controls
-                />
             </div>
         </div>
     </section>
@@ -63,3 +79,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
     </section>
 </BaseLayout>
+
+<script>
+    const video = document.getElementById('intro-video');
+    const playButton = document.getElementById('play-intro-video');
+    const videoWrap = document.getElementById('intro-video-wrap');
+
+    playButton?.addEventListener('click', () => {
+        if (!video || !videoWrap) return;
+
+        video.classList.remove('hidden');
+        video.classList.add('block');
+        video.play().catch(() => undefined);
+        playButton.style.display = 'none';
+        videoWrap.setAttribute('aria-label', 'Video de introducción en reproducción');
+    });
+</script>
