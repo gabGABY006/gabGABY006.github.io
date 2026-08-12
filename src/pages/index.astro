@@ -30,7 +30,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                         <button
                             id="play-intro-video"
                             type="button"
-                            class="inline-flex items-center justify-center rounded-full border border-white/50 bg-white/20 px-4 py-2 text-sm font-medium text-white shadow-lg backdrop-blur-sm transition hover:scale-[1.02] hover:bg-white/30"
+                            class="inline-flex items-center justify-center rounded-full border border-[#f7cde4] bg-[#fff4fa]/90 px-4 py-2 text-sm font-bold uppercase tracking-[0.16em] text-[#5a1d3d] shadow-[0_10px_24px_rgba(229,79,149,0.22)] backdrop-blur-sm transition hover:scale-[1.02] hover:bg-[#fffafc] dark:border-[#ff9ec9]/80 dark:bg-[#2c1427]/85 dark:text-[#ffeef7]"
                         >
                             Reproducir
                         </button>
@@ -94,6 +94,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         video.classList.remove('hidden');
         video.classList.add('block');
+        video.muted = false;
+        video.setAttribute('controls', 'controls');
         video.play().catch(() => undefined);
         playButton.style.display = 'none';
         videoWrap.setAttribute('aria-label', 'Video de introducción en reproducción');
