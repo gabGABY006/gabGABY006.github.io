@@ -10,7 +10,7 @@ seo:
 
 ![Jigglypuff Figma Trading Card Preview](../../assets/images/primerProyectoFigma.png)
 
-**Project Overview:**
+**Resumen del Proyecto**
 This custom retro-inspired Jigglypuff trading card was my very first hands-on UI/UX design project created entirely in Figma! Built as part of the **Codédex UI/UX Course**, this piece combines nostalgic pixel-art aesthetics with custom humorous move descriptions and a signature pink color palette.
 
 ## Objectives
