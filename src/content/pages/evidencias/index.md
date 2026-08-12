@@ -22,6 +22,4 @@ Bienvenido a la sección de evidencias. Aquí encontrarás trabajos, ideas y pro
   - [Ver trabajos de clase](/evidencias/clase)
 </details>
 
-> <div class="evidence-callout">Ups, aún no hay nada aquí… pero espera para ser sorprendido.</div>
-
 Selecciona una categoría para explorar las entradas correspondientes.
