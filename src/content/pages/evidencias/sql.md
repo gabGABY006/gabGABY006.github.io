@@ -2,8 +2,27 @@
 title: "SQL"
 ---
 
-Aquí se guardarán consultas, ejercicios y soluciones desarrolladas con SQL.
+## Evidencia SQL
 
-> Ups, aún no hay nada aquí… pero espera para ser sorprendido.
+### Título
 
-Pronto llegarán ejemplos de consultas, filtros, joins y análisis de datos.
+[Escribe el título de la evidencia]
+
+### Descripción
+
+Escribe aquí una breve descripción de la consulta, ejercicio o análisis realizado.
+
+### Archivo / enlace de compartir
+
+- Enlace: [Pega aquí el enlace para compartir el archivo]
+- Ejemplo: https://drive.google.com/...
+
+### Detalles
+
+- Fecha:
+- Tecnología / motor:
+- Observaciones:
+
+---
+
+> Puedes usar este espacio como plantilla para cada nueva evidencia de SQL.
