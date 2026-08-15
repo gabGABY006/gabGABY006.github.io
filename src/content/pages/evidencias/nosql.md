@@ -2,8 +2,12 @@
 title: "NoSQL"
 ---
 
-Aquí se organizarán ejercicios y proyectos relacionados con bases de datos NoSQL.
+## Evidencias de NoSQL
 
-> Ups, aún no hay nada aquí… pero espera para ser sorprendido.
+Cada colección, documento o ejercicio puede ir en un archivo aparte.
 
-Pronto llegarán ejemplos con colecciones, documentos y modelos flexibles para almacenamiento no relacional.
+- [Trabajo 1: Modelo NoSQL](/evidencias/nosql/trabajo-1)
+
+### Plantilla de evidencia
+
+Agrega nuevos archivos dentro de la carpeta `nosql/` para cada evidencia.

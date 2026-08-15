@@ -2,8 +2,12 @@
 title: "PL/SQL Scripts"
 ---
 
-Aquí se registrarán scripts, procedimientos, funciones, triggers y bloques PL/SQL.
+## Evidencias de PL/SQL
 
-> Ups, aún no hay nada aquí… pero espera para ser sorprendido.
+Cada script o procedimiento puede ir en un archivo independiente.
 
-Pronto aparecerán automatizaciones y soluciones desarrolladas con lógica procedural en Oracle.
+- [Script 1: Procedimiento almacenado](/evidencias/plsql/script-1)
+
+### Plantilla de evidencia
+
+Crea más archivos dentro de la carpeta `plsql/` para cada entrega nueva.

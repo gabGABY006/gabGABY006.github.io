@@ -2,8 +2,12 @@
 title: "Proyecto"
 ---
 
-Esta sección está lista para guardar ideas, trabajos y entregas importantes de proyectos.
+## Evidencias de Proyecto
 
-> Ups, aún no hay nada aquí… pero espera para ser sorprendido.
+Cada proyecto puede tener su propia página de evidencia.
 
-Pronto llegarán proyectos, exploraciones y resultados que valen la pena compartir.
+- [Proyecto 1: Desarrollo de base de datos](/evidencias/proyecto/proyecto-1)
+
+### Plantilla de evidencia
+
+Crea archivos dentro de la carpeta `proyecto/` para cada entregable o trabajo final.

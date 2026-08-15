@@ -2,27 +2,21 @@
 title: "SQL"
 ---
 
-## Evidencia SQL
+## Evidencias de SQL
 
-### Título
+Aquí puedes guardar cada trabajo en su propio archivo.
 
-[Escribe el título de la evidencia]
+- [Trabajo 1: Consulta y análisis de datos](/evidencias/sql/trabajo-1)
 
-### Descripción
+### Plantilla de evidencia
 
-Escribe aquí una breve descripción de la consulta, ejercicio o análisis realizado.
-
-### Archivo / enlace de compartir
-
-- Enlace: [Pega aquí el enlace para compartir el archivo]
-- Ejemplo: https://drive.google.com/...
-
-### Detalles
-
-- Fecha:
-- Tecnología / motor:
-- Observaciones:
+Puedes crear más archivos dentro de esta carpeta siguiendo el mismo formato.
 
 ---
 
-> Puedes usar este espacio como plantilla para cada nueva evidencia de SQL.
+### Cómo agregar un nuevo trabajo
+
+1. Crea un archivo nuevo dentro de la carpeta `sql/`.
+2. Ponle un nombre claro, por ejemplo: `trabajo-2.md`.
+3. Agrega el título, la descripción y el enlace de compartir.
+4. Añádelo a esta lista si quieres que aparezca aquí.
