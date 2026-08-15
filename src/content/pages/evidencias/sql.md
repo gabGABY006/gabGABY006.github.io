@@ -6,7 +6,7 @@ title: "SQL"
 
 Aquí puedes guardar cada trabajo en su propio archivo.
 
-- [Trabajo 1: Consulta y análisis de datos](/evidencias/sql/trabajo-1)
+- [Clase: JOINS y sus tipos(/evidencias/sql/clase-joins)
 
 ### Plantilla de evidencia
 
