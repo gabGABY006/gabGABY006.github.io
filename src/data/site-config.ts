@@ -1,11 +1,10 @@
-import avatar from '../assets/images/about.jpg';
 import hero from '../assets/images/hero.jpg';
 import type { SiteConfig } from '../types';
 
 const siteConfig: SiteConfig = {
     website: 'https://gabGABY006.github.io',
     avatar: {
-        src: avatar,
+        src: hero,
         alt: 'Gabriella Castro'
     },
     title: 'Gabriella Castro',
