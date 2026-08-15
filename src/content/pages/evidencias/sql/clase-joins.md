@@ -1,5 +1,5 @@
 ---
-title: "Trabajo 1: Consulta y análisis de datos"
+title: "Clase sobre JOINS"
 ---
 
 ## Título
