@@ -16,8 +16,6 @@ Clase sobre JOINS, se hicieron scripts para cada tipo de join y cómo se pueden 
   Ver SQL
 </a>
 
-> Link directo: https://drive.google.com/file/d/1ZrFSbQvvcxWoBTd00nL2QkqBhuz4fA4q/view?usp=sharing
-
 ## Detalles
 
 - Fecha: 13/08/2026
