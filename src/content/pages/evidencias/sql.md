@@ -7,6 +7,7 @@ title: "SQL"
 Aquí puedes guardar cada trabajo en su propio archivo.
 
 - [Clase: JOINS y sus tipos](/evidencias/sql/clase-joins)
+
 -[Laboratorio: Columnas Virtuales](/evidencias/sql/laboratorio-columnas-virtuales)
 
 ### Plantilla de evidencia
