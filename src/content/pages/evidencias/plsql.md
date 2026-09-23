@@ -4,10 +4,6 @@ title: "PL/SQL Scripts"
 
 ## Evidencias de PL/SQL
 
-Cada script o procedimiento puede ir en un archivo independiente.
 
-- [Script 1: Procedimiento almacenado](/evidencias/plsql/script-1)
+- [PL/SQL: Mi primer script, Tipos de datos](/evidencias/plsql/primer-script-pl-sql)
 
-### Plantilla de evidencia
-
-Crea más archivos dentro de la carpeta `plsql/` para cada entrega nueva.
