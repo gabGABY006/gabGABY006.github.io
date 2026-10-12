@@ -19,7 +19,7 @@ El objetivo del script es fijar la diferencia entre declarar tipos "a mano", con
 
 ## Enlace para compartir el archivo
 
-<a href="https://drive.google.com/file/d/13iOoyj93HsT5NuPtPqjv7WjsjZ3UzkCK/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+<a href="https://github.com/gabGABY006/bases-de-datos-2/blob/main/script1_plsql_tipos_de_datos.sql" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
   Ver PL/SQL
 </a>
 
