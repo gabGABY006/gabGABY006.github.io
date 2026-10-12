@@ -13,7 +13,7 @@ Ejercicio basado en ejemplo de un desarrollador malo
 
 ## Enlace para compartir el archivo
 
-<a href="https://drive.google.com/file/d/1YMsu2qAT8V_7hL47gLL1Vhj1PjqkoO57/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+<a href="https://github.com/gabGABY006/bases-de-datos-2/blob/main/EjercicioDesarrolladorMaloAgosto13.sql" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
   Ver SQL
 </a>
 

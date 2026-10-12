@@ -19,7 +19,7 @@ Incluyó cuatro frentes de trabajo:
 
 ## Enlace para compartir el archivo
 
-<a href="https://drive.google.com/file/d/1IWLrZQqwVC9AdI0ev__h1db9BFf8WB2Y/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+<a href="https://github.com/gabGABY006/bases-de-datos-2/blob/main/04_reto_corregido.sql" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
   Ver .sql del reto corregido
 </a>
 

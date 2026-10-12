@@ -6,4 +6,4 @@ title: "PL/SQL Scripts"
 
 
 - [PL/SQL: Mi primer script, Tipos de datos](/evidencias/plsql/primer-script-pl-sql)
-
+- [PL/SQL: Taller Grupo 8, Inventario y Ventas](/evidencias/plsql/taller-plsql-grupo-8)
