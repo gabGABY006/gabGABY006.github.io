@@ -1,3 +1,7 @@
+---
+title: 'BountyLine'
+---
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:031c24,50:0a5a62,100:e8408f&height=200&section=header&text=BOUNTYLINE&fontSize=60&fontColor=19f5f0&fontAlignY=40&stroke=031c24&strokeWidth=2&desc=Base%20de%20datos%20h%C3%ADbrida%3A%20MySQL%20%2B%20MongoDB&descSize=16&descColor=ff7ab8&descAlignY=62" alt="BountyLine" width="100%"/>
