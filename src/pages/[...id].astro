@@ -5,27 +5,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 export async function getStaticPaths() {
     const pages = await getCollection('pages');
     return pages.map((page) => {
+        // Página anterior: la carpeta que contiene a esta (p. ej. evidencias/sql/x → evidencias/sql).
+        const parentId = page.id.split('/').slice(0, -1).join('/');
+        const parent = pages.find((p) => p.id === parentId);
+        const back = parent ? { href: `/${parent.id}`, label: parent.data.title } : { href: '/', label: 'Inicio' };
         return {
             params: { id: page.id },
-            props: { page }
+            props: { page, back }
         };
     });
 }
 
-type Props = { page: CollectionEntry<'pages'> };
+type Props = { page: CollectionEntry<'pages'>; back: { href: string; label: string } };
 
-const { page } = Astro.props;
+const { page, back } = Astro.props;
 const { title, seo } = page.data;
 const { Content } = await render(page);
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description} image={seo?.image} pageType={seo?.pageType} showHeader={false}>
     <article class="mb-16 sm:mb-24">
+        <a href={back.href} class="back-button">← Volver a {back.label}</a>
         <header class="mb-8">
             <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">{title}</h1>
         </header>
         <div class="prose sm:prose-lg max-w-none">
             <Content />
         </div>
+        <a href={back.href} class="back-button mt-10">← Volver a {back.label}</a>
     </article>
 </BaseLayout>

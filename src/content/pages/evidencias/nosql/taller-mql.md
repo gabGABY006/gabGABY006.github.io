@@ -2,33 +2,31 @@
 title: "Taller MQL · Películas y modelos documentales"
 ---
 
-<p class="evidence-back"><a href="/evidencias/nosql">← Volver a NoSQL</a></p>
+## Título
 
-<p class="evidence-kicker">NoSQL</p>
+Taller MQL
 
-<p class="evidence-team">Lina Sofia Patiño, Gabriella Michelle Castro y Julián Samuel Rodríguez</p>
+## Descripción
 
-Consultamos películas de <code>sample_mflix</code>, agrupamos resultados y comparamos la ejecución de una consulta antes y después de crear un índice compuesto. En la parte D presentamos modelos documentales con ejemplos en JSON.
+Usando MongoDB Atlas y la base de prueba 'sample_mflix' se hizo un taller en clase con consultas MQL, desde consultas más sencillas, hasta consultas más complejas usando índices
+
+Consultamos películas de `sample_mflix`, agrupamos resultados y comparamos la ejecución de una consulta antes y después de crear un índice compuesto. En la parte D presentamos modelos documentales con ejemplos en JSON.
 
 <div class="evidence-callout">
-<h2>¿Qué cambia cuando MongoDB utiliza un índice?</h2>
+<strong>¿Qué cambia cuando MongoDB utiliza un índice?</strong>
 <p>El punto 14 repite una consulta sobre películas y compara su plan antes y después de crear un índice compuesto. La pregunta es cuántos documentos debe examinar el motor para obtener los resultados.</p>
 <p>En el script, localiza <code>executionStats</code> y compara <code>totalDocsExamined</code> y el plan ganador. En el informe puedes contrastar esa evidencia con la consulta original.</p>
 </div>
 
-<nav class="evidence-nav" aria-label="Secciones"><a href="#consultas">Consultas, agregación e índices</a><a href="#modelos">Parte D · Modelos documentales</a><a href="#script">Script MQL</a></nav>
-
-<h2 id="consultas">Consultas, agregación e índices</h2>
+## Consultas, agregación e índices
 
 <iframe title="Consultas, agregación e índices" src="/bases-2/taller-mql/consultas.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/taller-mql/consultas.pdf" target="_blank" rel="noopener noreferrer">Abrir consultas, agregación e índices en PDF</a></p>
 
-<h2 id="modelos">Parte D · Modelos documentales</h2>
+## Parte D · Modelos documentales
 
 <iframe title="Parte D · Modelos documentales" src="/bases-2/taller-mql/Modelos_ParteD_Taller_MQL.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/taller-mql/Modelos_ParteD_Taller_MQL.pdf" target="_blank" rel="noopener noreferrer">Abrir parte D · Modelos documentales en PDF</a></p>
 
-<h2 id="script">Script MQL · Partes A, B y C</h2>
+## Script MQL · Partes A, B y C
 
 <div class="evidence-code">
 
@@ -87,7 +85,6 @@ db.movies.find(
 );
 
 // Parte B - AGREGACIÓN
-
 
 // 6. 
 // Filtra registros con rating numérico válido y separa cada género del arreglo con $unwind. Luego agrupa por género acumulando
@@ -340,4 +337,26 @@ db.movies.dropIndex("idx_punto14");
 
 </div>
 
-<p><a href="/bases-2/taller-mql/SCRIPT_TALLER.mongodb" download>Descargar el script (.mongodb)</a></p>
+## Enlace para compartir el archivo
+
+<a href="/bases-2/taller-mql/consultas.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Ver informe de consultas (PDF)
+</a>
+
+<a href="/bases-2/taller-mql/Modelos_ParteD_Taller_MQL.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Ver modelos documentales (PDF)
+</a>
+
+<a href="/bases-2/taller-mql/SCRIPT_TALLER.mongodb" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar script (.mongodb)
+</a>
+
+<a href="https://github.com/gabGABY006/bases-de-datos-2/blob/main/taller_castro_pati%C3%B1o_rodr%C3%ADguez.mongodb" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Ver MQL en GitHub
+</a>
+
+## Detalles
+
+- Fecha: 03/11/2026
+- Motor / herramienta: MongoDB Atlas, base de prueba `sample_mflix`
+- Integrantes: Lina Sofia Patiño, Gabriella Michelle Castro y Julián Samuel Rodríguez

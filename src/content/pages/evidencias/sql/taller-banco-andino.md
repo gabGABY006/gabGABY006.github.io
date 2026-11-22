@@ -1,36 +1,37 @@
 ---
-title: "Taller integrador · Banco Andino"
+title: "Taller Integrador — Transacciones, Concurrencia, Índices y SQL Avanzado"
 ---
 
-<p class="evidence-back"><a href="/evidencias/sql">← Volver a SQL</a></p>
+## Título
 
-<p class="evidence-kicker">SQL avanzado</p>
+Taller integrador · Banco Andino
 
-<p class="evidence-team">Lina Sofia Patiño, Gabriella Castro y Julián Samuel Rodríguez</p>
+## Descripción
 
-Analizamos transferencias simultáneas, corregimos la secuencia de débito y crédito y comparamos planes de ejecución con y sin índices.
+Taller integrador de Bases de Datos 2 sobre un caso bancario simulado (Banco Andino), enfocado en diagnosticar y corregir problemas reales de concurrencia, integridad transaccional y rendimiento en Oracle.
+
+Incluyó cuatro frentes de trabajo:
+
+- **Concurrencia y bloqueos**: reproducción de una actualización perdida (lost update) entre dos conexiones simultáneas, y su corrección con bloqueo pesimista (`SELECT ... FOR UPDATE`) y bloqueo optimista (columna de versión). Reparto de una cola de tareas con `FOR UPDATE SKIP LOCKED`, y provocación/corrección de un interbloqueo real (`ORA-00060`) entre transferencias cruzadas.
+- **Índices y optimización de consultas**: uso de `EXPLAIN PLAN` y `DBMS_XPLAN` para comparar planes de ejecución antes/después de crear índices compuestos, índices basados en función, y análisis de selectividad y *clustering factor* para justificar cuándo un índice sí se usa y cuándo no.
+- **SQL avanzado**: funciones de ventana (`RANK`, `DENSE_RANK`, `ROW_NUMBER`, `LAG`), series de tiempo con acumulados y promedios móviles, CTEs recursivas para resolver jerarquías de catálogo, `MERGE` para conciliación de ajustes, y `PIVOT`/`LISTAGG` para reportes.
+- **Reto integrador**: diagnóstico de cuatro defectos reales (concurrencia, transaccionalidad, trazabilidad y rendimiento) en una secuencia bancaria defectuosa, y su reescritura completa aplicando bloqueo en orden determinista, atomicidad, verificación de filas afectadas y optimización de la consulta gerencial mediante reescritura de predicados sargables.
 
 <div class="evidence-callout">
-<h2>¿Por qué dos retiros dejaron un saldo incorrecto?</h2>
+<strong>¿Por qué dos retiros dejaron un saldo incorrecto?</strong>
 <p>Las dos sesiones leyeron un saldo de $1.000.000. Al retirar $300.000 y $200.000 debían quedar $500.000, pero la última escritura dejó $800.000. La fila estuvo bloqueada durante la escritura y, aun así, se perdió un retiro: la segunda sesión había calculado su saldo con un dato anterior.</p>
 <p>En el script, compara las dos conexiones con la secuencia corregida. Busca <code>FOR UPDATE</code> y observa dónde se confirma el débito junto con el crédito.</p>
 </div>
 
-<nav class="evidence-nav" aria-label="Secciones"><a href="#documentos">Documentos</a><a href="#capturas">Capturas</a><a href="#codigo">Script SQL</a><a href="#video">Video</a></nav>
-
-<h2 id="documentos">Informe final</h2>
+## Informe final
 
 <iframe title="Informe final" src="/bases-2/banco-andino/informe.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/banco-andino/informe.pdf" target="_blank" rel="noopener noreferrer">Abrir informe final en PDF</a></p>
 
 ## Guía del taller
 
 <iframe title="Guía del taller" src="/bases-2/banco-andino/guia.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/banco-andino/guia.pdf" target="_blank" rel="noopener noreferrer">Abrir guía del taller en PDF</a></p>
 
-<p><a href="/bases-2/banco-andino/informe.docx" download>Descargar informe original en Word</a></p>
-
-<h2 id="capturas">Capturas del informe</h2>
+## Capturas del informe
 
 <div class="evidence-gallery">
 <figure><a href="/bases-2/banco-andino/capturas/image1.png" target="_blank" rel="noopener noreferrer"><img src="/bases-2/banco-andino/capturas/image1.png" loading="lazy" alt="Captura 1 del informe" /></a><figcaption>Captura 1</figcaption></figure>
@@ -55,7 +56,7 @@ Analizamos transferencias simultáneas, corregimos la secuencia de débito y cr�
 <figure><a href="/bases-2/banco-andino/capturas/image20.png" target="_blank" rel="noopener noreferrer"><img src="/bases-2/banco-andino/capturas/image20.png" loading="lazy" alt="Captura 20 del informe" /></a><figcaption>Captura 20</figcaption></figure>
 </div>
 
-<h2 id="codigo">Script SQL</h2>
+## Script SQL del reto corregido
 
 <div class="evidence-code">
 
@@ -65,7 +66,6 @@ Analizamos transferencias simultáneas, corregimos la secuencia de débito y cr�
 -- Archivo: 04_reto_corregido.sql
 -- Integrantes: Julián · Gabriela · Lina
 -- =====================================================================
-
 
 -- =====================================================================
 -- 1. Reproducción del defecto de CONCURRENCIA
@@ -91,7 +91,6 @@ COMMIT;
 SELECT saldo FROM cuenta WHERE id_cuenta = 1001;
 -- Resultado: Queda en 800.000 (se pierden los cambios de A por concurrencia no controlada).
 
-
 -- =====================================================================
 -- 2. Reproducción del defecto de TRANSACCIONALIDAD
 -- =====================================================================
@@ -108,7 +107,6 @@ COMMIT;
 
 SELECT id_cuenta, saldo FROM cuenta WHERE id_cuenta IN (1001, 1002) ORDER BY id_cuenta;
 -- Resultado: 1001 queda en 700.000 y 1002 sigue en 1.000.000 (dinero desaparecido).
-
 
 -- =====================================================================
 -- 3. Secuencia Corregida (Reemplaza la Pieza 1 original)
@@ -155,7 +153,6 @@ COMMIT;
 
 SELECT id_cuenta, saldo FROM cuenta WHERE id_cuenta IN (1001, 1002) ORDER BY id_cuenta;
 
-
 -- =====================================================================
 -- 4. Demostración cruzada: Dos transferencias simultáneas sin deadlock
 -- =====================================================================
@@ -187,7 +184,6 @@ COMMIT;
 
 SELECT id_cuenta, saldo FROM cuenta WHERE id_cuenta IN (1001, 1002) ORDER BY id_cuenta;
 
-
 -- =====================================================================
 -- 5. Optimización de la consulta del tablero (Parte C)
 -- =====================================================================
@@ -208,7 +204,6 @@ SELECT s.ciudad,
 
 SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY(format => 'BASIC +COST +ROWS'));
 
-
 -- Consulta reescrita y optimizada (rango sargable para usar el índice)
 SELECT s.ciudad,
        COUNT(DISTINCT t.id_transferencia) AS operaciones,
@@ -222,7 +217,6 @@ SELECT s.ciudad,
    AND t.estado        = 'APLICADA'
  GROUP BY s.ciudad
  ORDER BY valor_total DESC;
-
 
 -- Plan DESPUÉS
 EXPLAIN PLAN FOR
@@ -244,21 +238,40 @@ SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY(format => 'BASIC +COST +ROWS'));
 
 </div>
 
-<p><a href="/bases-2/banco-andino/04_reto_corregido.sql" download>Descargar script SQL</a></p>
-
-<h2 id="video">Video del taller</h2>
+## Video del taller
 
 <div class="evidence-video"><iframe title="Video del taller Banco Andino" loading="lazy" src="https://www.youtube-nocookie.com/embed/cFvrH1RSe6Y" allowfullscreen></iframe></div>
-<p><a href="https://youtu.be/cFvrH1RSe6Y" target="_blank" rel="noopener noreferrer">Ver en YouTube</a></p>
 
-<details class="evidence-drop">
-<summary>Qué cubrió el taller</summary>
+## Enlace para compartir el archivo
 
-- **Concurrencia y bloqueos**: reproducción de una actualización perdida (lost update) entre dos conexiones simultáneas, y su corrección con bloqueo pesimista (`SELECT ... FOR UPDATE`) y bloqueo optimista (columna de versión). Reparto de una cola de tareas con `FOR UPDATE SKIP LOCKED`, y provocación/corrección de un interbloqueo real (`ORA-00060`) entre transferencias cruzadas.
-- **Índices y optimización de consultas**: uso de `EXPLAIN PLAN` y `DBMS_XPLAN` para comparar planes de ejecución antes/después de crear índices compuestos, índices basados en función, y análisis de selectividad y *clustering factor* para justificar cuándo un índice sí se usa y cuándo no.
-- **SQL avanzado**: funciones de ventana (`RANK`, `DENSE_RANK`, `ROW_NUMBER`, `LAG`), series de tiempo con acumulados y promedios móviles, CTEs recursivas para resolver jerarquías de catálogo, `MERGE` para conciliación de ajustes, y `PIVOT`/`LISTAGG` para reportes.
-- **Reto integrador**: diagnóstico de cuatro defectos reales (concurrencia, transaccionalidad, trazabilidad y rendimiento) en una secuencia bancaria defectuosa, y su reescritura completa aplicando bloqueo en orden determinista, atomicidad, verificación de filas afectadas y optimización de la consulta gerencial mediante reescritura de predicados sargables.
+<a href="/bases-2/banco-andino/informe.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Ver informe final (PDF)
+</a>
 
-**Detalles:** 13/09/2026 · SQL Developer · Oracle Autonomous Database · trabajo en equipo (3 integrantes)
+<a href="/bases-2/banco-andino/informe.docx" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar informe en Word
+</a>
 
-</details>
+<a href="/bases-2/banco-andino/guia.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Ver guía del taller
+</a>
+
+<a href="/bases-2/banco-andino/04_reto_corregido.sql" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar .sql del reto corregido
+</a>
+
+<a href="https://youtu.be/cFvrH1RSe6Y" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Ver video en YouTube
+</a>
+
+<a href="https://github.com/gabGABY006/bases-de-datos-2/blob/main/04_reto_corregido.sql" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Ver .sql en GitHub
+</a>
+
+## Detalles
+
+- Fecha: 13/09/2026
+- Motor / herramienta: SQLDeveloper
+- Base de datos: Oracle Autonomous Database
+- Modalidad: trabajo en equipo (3 integrantes)
+- Integrantes: Lina Sofia Patiño, Gabriella Castro y Julián Samuel Rodríguez

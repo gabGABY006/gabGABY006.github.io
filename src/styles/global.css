@@ -278,65 +278,6 @@ html.dark {
 }
 
 /* Páginas de evidencias de Bases de Datos 2 */
-.evidence-back {
-    margin-top: 0 !important;
-    font-size: 0.95rem;
-}
-
-.evidence-kicker {
-    margin-bottom: 0 !important;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #e45ea0;
-}
-
-html.dark .evidence-kicker {
-    color: #ff9ec9;
-}
-
-.evidence-team {
-    font-style: italic;
-    opacity: 0.85;
-}
-
-.evidence-callout h2 {
-    margin-top: 0 !important;
-    font-size: 1.35em !important;
-}
-
-.evidence-nav,
-.evidence-phases {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin: 1.5rem 0;
-}
-
-.evidence-nav a,
-.evidence-phases a {
-    padding: 0.45rem 1rem;
-    border: 1px solid rgba(228, 94, 160, 0.45);
-    border-radius: 999px;
-    background: var(--panel-pink);
-    text-decoration: none !important;
-    font-size: 0.9em;
-}
-
-.evidence-phases a {
-    flex: 1 1 14rem;
-    border-radius: 1rem;
-    padding: 1rem 1.2rem;
-    font-weight: 700;
-}
-
-.evidence-nav a:hover,
-.evidence-phases a:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px var(--shadow-pink);
-}
-
 .evidence-pdf {
     display: block;
     width: 100%;
@@ -392,34 +333,33 @@ html.dark .evidence-kicker {
     padding: 0.4rem 0.8rem;
 }
 
-.evidence-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    gap: 1rem;
-    padding: 0 !important;
-    list-style: none !important;
-}
-
-.evidence-cards li {
-    margin: 0 !important;
-    padding: 1rem 1.1rem !important;
-    border: 1px solid rgba(228, 94, 160, 0.4);
-    border-radius: 1rem;
-    background: var(--panel-pink);
-}
-
-.evidence-cards h3 {
-    margin: 0 0 0.4rem !important;
-    font-size: 1.05em !important;
-}
-
-.evidence-cards p {
-    margin: 0 0 0.5rem !important;
-    font-size: 0.92em;
+.evidence-callout strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-family: var(--font-serif);
+    font-size: 1.15em;
 }
 
 .evidence-shot {
     width: 100%;
     border: 1px solid rgba(228, 94, 160, 0.4);
     border-radius: 1rem;
+}
+
+/* Botón para regresar a la página anterior */
+.back-button {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 0.55rem 1.1rem;
+    background: #f472b6;
+    color: white;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.back-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px var(--shadow-pink);
 }

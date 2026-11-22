@@ -2,9 +2,9 @@
 title: "Fase 2 · Implementación e integración"
 ---
 
-<p class="evidence-back"><a href="/evidencias/proyecto/bountyline">← Volver a BountyLine</a></p>
+## Descripción
 
-La operación de pago permite revisar la integración de principio a fin. En MySQL, 02_logica.sql comprueba el propietario y el estado antes de liberar créditos. En MongoDB, 01_colecciones.js define las colecciones e índices y 04_consultas.js muestra cómo consultar la actividad. Los documentos de conexión explican cómo se accede a ambos motores desde la aplicación.
+La operación de pago permite revisar la integración de principio a fin. En MySQL, `02_logica.sql` comprueba el propietario y el estado antes de liberar créditos. En MongoDB, `01_colecciones.js` define las colecciones e índices y `04_consultas.js` muestra cómo consultar la actividad. Los documentos de conexión explican cómo se accede a ambos motores desde la aplicación.
 
 ## Infraestructura y despliegue
 
@@ -12,7 +12,10 @@ La operación de pago permite revisar la integración de principio a fin. En MyS
 <summary>Selección del sistema operativo</summary>
 
 <iframe title="Selección del sistema operativo" src="/bases-2/bountyline/fase-2/seleccion-del-sistema-operativo.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/seleccion-del-sistema-operativo.pdf" target="_blank" rel="noopener noreferrer">Abrir selección del sistema operativo en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/seleccion-del-sistema-operativo.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -20,7 +23,10 @@ La operación de pago permite revisar la integración de principio a fin. En MyS
 <summary>Implementación de la máquina virtual</summary>
 
 <iframe title="Implementación de la máquina virtual" src="/bases-2/bountyline/fase-2/implementacion-de-la-maquina-virtual.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/implementacion-de-la-maquina-virtual.pdf" target="_blank" rel="noopener noreferrer">Abrir implementación de la máquina virtual en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/implementacion-de-la-maquina-virtual.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -28,7 +34,10 @@ La operación de pago permite revisar la integración de principio a fin. En MyS
 <summary>Diagrama de despliegue</summary>
 
 <iframe title="Diagrama de despliegue" src="/bases-2/bountyline/fase-2/diagrama-de-despliegue.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/diagrama-de-despliegue.pdf" target="_blank" rel="noopener noreferrer">Abrir diagrama de despliegue en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/diagrama-de-despliegue.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -38,7 +47,10 @@ La operación de pago permite revisar la integración de principio a fin. En MyS
 <summary>Selección del motor relacional</summary>
 
 <iframe title="Selección del motor relacional" src="/bases-2/bountyline/fase-2/seleccion-del-motor-relacional.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/seleccion-del-motor-relacional.pdf" target="_blank" rel="noopener noreferrer">Abrir selección del motor relacional en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/seleccion-del-motor-relacional.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -46,7 +58,10 @@ La operación de pago permite revisar la integración de principio a fin. En MyS
 <summary>Implementación del motor relacional</summary>
 
 <iframe title="Implementación del motor relacional" src="/bases-2/bountyline/fase-2/implementacion-del-motor-relacional.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/implementacion-del-motor-relacional.pdf" target="_blank" rel="noopener noreferrer">Abrir implementación del motor relacional en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/implementacion-del-motor-relacional.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -54,7 +69,10 @@ La operación de pago permite revisar la integración de principio a fin. En MyS
 <summary>Conexión de la aplicación con la base relacional</summary>
 
 <iframe title="Conexión de la aplicación con la base relacional" src="/bases-2/bountyline/fase-2/conexion-de-la-aplicacion-con-la-base-relacional.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/conexion-de-la-aplicacion-con-la-base-relacional.pdf" target="_blank" rel="noopener noreferrer">Abrir conexión de la aplicación con la base relacional en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/conexion-de-la-aplicacion-con-la-base-relacional.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -300,7 +318,9 @@ CREATE INDEX ix_auditoria_cuenta_fecha ON auditoria_cuenta (id_cuenta, fecha_cam
 
 </div>
 
-<p><a href="/bases-2/bountyline/fase-2/01_creacion.sql" download>Descargar script</a></p>
+<a href="/bases-2/bountyline/fase-2/01_creacion.sql" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar script
+</a>
 
 </details>
 
@@ -1294,7 +1314,9 @@ SELECT 'CUENTA', UPPER(a.campo_modificado), a.fecha_cambio,
 
 </div>
 
-<p><a href="/bases-2/bountyline/fase-2/02_logica.sql" download>Descargar script</a></p>
+<a href="/bases-2/bountyline/fase-2/02_logica.sql" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar script
+</a>
 
 </details>
 
@@ -1542,7 +1564,9 @@ SELECT 'cuenta' AS tabla, COUNT(*) AS registros FROM cuenta UNION ALL SELECT 'mi
 
 </div>
 
-<p><a href="/bases-2/bountyline/fase-2/03_insercion.sql" download>Descargar script</a></p>
+<a href="/bases-2/bountyline/fase-2/03_insercion.sql" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar script
+</a>
 
 </details>
 
@@ -1604,7 +1628,9 @@ FLUSH PRIVILEGES;
 
 </div>
 
-<p><a href="/bases-2/bountyline/fase-2/04_usuarios.sql" download>Descargar script</a></p>
+<a href="/bases-2/bountyline/fase-2/04_usuarios.sql" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar script
+</a>
 
 </details>
 
@@ -1614,7 +1640,10 @@ FLUSH PRIVILEGES;
 <summary>Modelo documental</summary>
 
 <iframe title="Modelo documental" src="/bases-2/bountyline/fase-2/modelo-documental.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/modelo-documental.pdf" target="_blank" rel="noopener noreferrer">Abrir modelo documental en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/modelo-documental.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -1622,7 +1651,10 @@ FLUSH PRIVILEGES;
 <summary>Implementación de MongoDB</summary>
 
 <iframe title="Implementación de MongoDB" src="/bases-2/bountyline/fase-2/implementacion-de-mongodb.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/implementacion-de-mongodb.pdf" target="_blank" rel="noopener noreferrer">Abrir implementación de MongoDB en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/implementacion-de-mongodb.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -1630,7 +1662,10 @@ FLUSH PRIVILEGES;
 <summary>Conexión de la aplicación con MongoDB</summary>
 
 <iframe title="Conexión de la aplicación con MongoDB" src="/bases-2/bountyline/fase-2/conexion-de-la-aplicacion-con-mongodb.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/conexion-de-la-aplicacion-con-mongodb.pdf" target="_blank" rel="noopener noreferrer">Abrir conexión de la aplicación con MongoDB en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/conexion-de-la-aplicacion-con-mongodb.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -1786,7 +1821,9 @@ print('Colecciones creadas: ' + db.getCollectionNames().sort().join(', '));
 
 </div>
 
-<p><a href="/bases-2/bountyline/fase-2/01_colecciones.js" download>Descargar script</a></p>
+<a href="/bases-2/bountyline/fase-2/01_colecciones.js" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar script
+</a>
 
 </details>
 
@@ -2564,7 +2601,9 @@ print('bitacora_actividad: ' + db.bitacora_actividad.countDocuments());
 
 </div>
 
-<p><a href="/bases-2/bountyline/fase-2/02_insercion.js" download>Descargar script</a></p>
+<a href="/bases-2/bountyline/fase-2/02_insercion.js" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar script
+</a>
 
 </details>
 
@@ -2606,7 +2645,9 @@ print('Usuarios: ' + admin.getUsers().users.map(u => u.user).join(', '));
 
 </div>
 
-<p><a href="/bases-2/bountyline/fase-2/03_usuarios.js" download>Descargar script</a></p>
+<a href="/bases-2/bountyline/fase-2/03_usuarios.js" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar script
+</a>
 
 </details>
 
@@ -2739,7 +2780,9 @@ db.bitacora_actividad.aggregate([
 
 </div>
 
-<p><a href="/bases-2/bountyline/fase-2/04_consultas.js" download>Descargar script</a></p>
+<a href="/bases-2/bountyline/fase-2/04_consultas.js" download style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Descargar script
+</a>
 
 </details>
 
@@ -2749,7 +2792,10 @@ db.bitacora_actividad.aggregate([
 <summary>Políticas de respaldo</summary>
 
 <iframe title="Políticas de respaldo" src="/bases-2/bountyline/fase-2/politicas-de-respaldo.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/politicas-de-respaldo.pdf" target="_blank" rel="noopener noreferrer">Abrir políticas de respaldo en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/politicas-de-respaldo.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -2757,7 +2803,10 @@ db.bitacora_actividad.aggregate([
 <summary>Plan de recuperación ante desastres</summary>
 
 <iframe title="Plan de recuperación ante desastres" src="/bases-2/bountyline/fase-2/plan-de-recuperacion-ante-desastres.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/plan-de-recuperacion-ante-desastres.pdf" target="_blank" rel="noopener noreferrer">Abrir plan de recuperación ante desastres en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/plan-de-recuperacion-ante-desastres.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
@@ -2767,13 +2816,21 @@ db.bitacora_actividad.aggregate([
 <summary>Documento de enlaces del equipo</summary>
 
 <iframe title="Documento de enlaces del equipo" src="/bases-2/bountyline/fase-2/documento-de-enlaces-del-equipo.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
-<p><a href="/bases-2/bountyline/fase-2/documento-de-enlaces-del-equipo.pdf" target="_blank" rel="noopener noreferrer">Abrir documento de enlaces del equipo en PDF</a></p>
+
+<a href="/bases-2/bountyline/fase-2/documento-de-enlaces-del-equipo.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Abrir PDF completo
+</a>
 
 </details>
 
 ## BountyLine en funcionamiento
 
 <div class="evidence-video"><iframe title="Demostración de BountyLine" loading="lazy" src="https://www.youtube-nocookie.com/embed/qVt9Vf7JouA" allowfullscreen></iframe></div>
-<p><a href="https://youtu.be/qVt9Vf7JouA" target="_blank" rel="noopener noreferrer">Ver en YouTube</a></p>
 
-<p><a href="https://github.com/gabGABY006/BountyLine" target="_blank" rel="noopener noreferrer">Repositorio del proyecto</a></p>
+<a href="https://youtu.be/qVt9Vf7JouA" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Ver en YouTube
+</a>
+
+<a href="https://github.com/gabGABY006/BountyLine" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Repositorio del proyecto
+</a>
