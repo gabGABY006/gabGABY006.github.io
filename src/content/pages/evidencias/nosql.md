@@ -2,7 +2,11 @@
 title: "NoSQL"
 ---
 
-- [Taller MQL: sample_mflix](/evidencias/nosql/taller-mql)
-- [Práctica MongoDB: Alojamientos de Airbnb](/evidencias/nosql/practica-airbnb)
-- [Investigación: Tipos de bases de datos NoSQL](/evidencias/nosql/investigacion-tipos-nosql)
-- [Investigación: 16 patrones de diseño de MongoDB](/evidencias/nosql/patrones-diseno-mongodb)
+## Evidencias de NoSQL
+
+<div class="cover-grid">
+<a class="cover-card" href="/evidencias/nosql/taller-mql"><img src="/portadas/taller-mql.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">Taller</span><span class="cover-title">Taller MQL: sample_mflix</span><span class="cover-text">Consultas, agregación, índices y modelos documentales.</span><span class="cover-meta">03/11/2026</span></span></a>
+<a class="cover-card" href="/evidencias/nosql/practica-airbnb"><img src="/portadas/airbnb.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">Práctica</span><span class="cover-title">Alojamientos de Airbnb</span><span class="cover-text">CRUD con MQL sobre sample_airbnb: find, insert y update.</span><span class="cover-meta">Noviembre 2026</span></span></a>
+<a class="cover-card" href="/evidencias/nosql/investigacion-tipos-nosql"><img src="/portadas/tipos-nosql.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">Investigación</span><span class="cover-title">Tipos de bases NoSQL</span><span class="cover-text">Clave-valor, documentos, columnas anchas y grafos.</span><span class="cover-meta">Octubre 2026</span></span></a>
+<a class="cover-card" href="/evidencias/nosql/patrones-diseno-mongodb"><img src="/portadas/patrones-mongodb.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">Investigación</span><span class="cover-title">16 patrones de diseño de MongoDB</span><span class="cover-text">Cómo organizar documentos según las consultas de la aplicación.</span><span class="cover-meta">Noviembre 2026</span></span></a>
+</div>

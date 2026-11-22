@@ -4,7 +4,8 @@ title: "PL/SQL Scripts"
 
 ## Evidencias de PL/SQL
 
-
-- [PL/SQL: Mi primer script, Tipos de datos](/evidencias/plsql/primer-script-pl-sql)
-- [PL/SQL: Taller Grupo 8, Inventario y Ventas](/evidencias/plsql/taller-plsql-grupo-8)
-- [PL/SQL: Investigación propia tablas mutantes](/evidencias/plsql/investigacion-tablas-mutantes)
+<div class="cover-grid">
+<a class="cover-card" href="/evidencias/plsql/primer-script-pl-sql"><img src="/portadas/primer-script.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">Script</span><span class="cover-title">Mi primer script: tipos de datos</span><span class="cover-text">Bloques anónimos, %TYPE y %ROWTYPE.</span><span class="cover-meta">22/09/2026</span></span></a>
+<a class="cover-card" href="/evidencias/plsql/taller-plsql-grupo-8"><img src="/portadas/inventario.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">Taller</span><span class="cover-title">Inventario y ventas (Grupo 8)</span><span class="cover-text">Procedimientos, funciones, cursores, triggers y el paquete PKG_VENTAS.</span><span class="cover-meta">03/10/2026</span></span></a>
+<a class="cover-card" href="/evidencias/plsql/investigacion-tablas-mutantes"><img src="/portadas/tablas-mutantes.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">Investigación</span><span class="cover-title">Tablas mutantes</span><span class="cover-text">Por qué aparece ORA-04091 y cómo evitarlo con triggers compuestos.</span><span class="cover-meta">Octubre 2026</span></span></a>
+</div>

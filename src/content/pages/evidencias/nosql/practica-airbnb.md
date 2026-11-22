@@ -24,6 +24,12 @@ Usando la base de prueba `sample_airbnb` insertamos alojamientos y consultamos s
 
 <iframe title="Guía del taller" src="/bases-2/practica-airbnb/guia.pdf#view=FitH" loading="lazy" class="evidence-pdf"></iframe>
 
+## Lo que aprendí
+
+- **Filtro y proyección son dos cosas distintas.** El primer argumento de `find` decide qué documentos entran (por ejemplo, precio menor a 75) y el segundo decide qué campos se muestran.
+- **Los documentos pueden tener estructuras anidadas.** Consultar servicios (`amenities`) o campos dentro de objetos exige entender cómo se guardan los arreglos y los subdocumentos.
+- **`updateOne` y `updateMany` no son lo mismo.** Con el mismo filtro, uno modifica solo el primer documento que encuentra y el otro todos los que coinciden, así que hay que revisar bien el filtro antes de ejecutar.
+
 ## Enlace para compartir el archivo
 
 <a href="/bases-2/practica-airbnb/practica.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
@@ -36,5 +42,6 @@ Usando la base de prueba `sample_airbnb` insertamos alojamientos y consultamos s
 
 ## Detalles
 
+- Fecha: noviembre de 2026
 - Motor / herramienta: MongoDB, base de prueba `sample_airbnb`
 - Integrantes: Gabriella Castro, Lina Patiño y Julián Rodríguez

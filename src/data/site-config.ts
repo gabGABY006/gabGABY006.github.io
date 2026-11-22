@@ -9,9 +9,9 @@ const siteConfig: SiteConfig = {
     },
     title: 'Gabriella Castro',
     subtitle: 'Estudiante de Ingeniería de Sistemas | Entusiasta y desarrolladora UX/UI',
-    description: 'Portafolio personal y blog tecnológico de Gabriella Castro. Explorando diseño UX/UI, ingeniería de software, creaciones en Figma, algoritmos y desarrollo web.',
+    description: 'Portafolio de Gabriella Castro, estudiante de Ingeniería de Sistemas en la Universidad El Bosque: evidencias de Bases de Datos 2 con SQL, PL/SQL, MongoDB y el proyecto BountyLine.',
     image: {
-        src: '/dante-preview.jpg',
+        src: '/og-portafolio.jpg',
         alt: 'Portafolio de Gabriella Castro'
     },
     headerNavLinks: [
@@ -77,17 +77,7 @@ const siteConfig: SiteConfig = {
                 href: '/contact'
             }
         ]
-    },
-    subscribe: {
-        enabled: true,
-        title: 'Suscríbete a las actualizaciones',
-        text: 'Recibe avisos cuando publique nuevos artículos, escritos de proyectos o notas técnicas.',
-        form: {
-            action: '#'
-        }
-    },
-    postsPerPage: 8,
-    projectsPerPage: 8
+    }
 };
 
 export default siteConfig;

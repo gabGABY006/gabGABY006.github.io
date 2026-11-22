@@ -139,3 +139,7 @@ comparte datos entre las dos fases.
 6. Shaik. *Mutating table/trigger error and how to resolve it* (ejemplo de la
    comunidad sobre transacciones autónomas).
    https://gist.github.com/shaik2many/4697972
+
+## Detalles
+
+- Fecha: octubre de 2026

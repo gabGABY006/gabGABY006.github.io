@@ -2,30 +2,11 @@
 title: "Evidencias"
 ---
 
-Bienvenido a la sección de evidencias. Aquí encontrarás trabajos, ideas y procesos agrupados por categoría:
+Bienvenido a la sección de evidencias. Aquí encontrarás los trabajos de **Bases de Datos 2** agrupados por categoría. Elige una para explorar sus entradas.
 
-<details class="evidence-drop" open>
-  <summary>SQL</summary>
-  
-  - [Ver trabajos de SQL](/evidencias/sql)
-</details>
-
-<details class="evidence-drop">
-  <summary>PL/SQL Scripts</summary>
-  
-  - [Ver scripts de PL/SQL](/evidencias/plsql)
-</details>
-
-<details class="evidence-drop">
-  <summary>NoSQL</summary>
-  
-  - [Ver trabajos de NoSQL](/evidencias/nosql)
-</details>
-
-<details class="evidence-drop">
-  <summary>Proyecto</summary>
-  
-  - [Ver trabajos de proyecto](/evidencias/proyecto)
-</details>
-
-Selecciona una categoría para explorar las entradas correspondientes.
+<div class="cover-grid">
+<a class="cover-card" href="/evidencias/sql"><img src="/portadas/sql.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">SQL</span><span class="cover-title">Consultas y datos</span><span class="cover-text">JOINS, columnas virtuales y el taller de transacciones e índices del Banco Andino.</span><span class="cover-meta">4 trabajos</span></span></a>
+<a class="cover-card" href="/evidencias/plsql"><img src="/portadas/plsql.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">PL/SQL Scripts</span><span class="cover-title">Procedimientos y lógica</span><span class="cover-text">Bloques, procedimientos, funciones, triggers y paquetes en Oracle.</span><span class="cover-meta">3 trabajos</span></span></a>
+<a class="cover-card" href="/evidencias/nosql"><img src="/portadas/nosql.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">NoSQL</span><span class="cover-title">Documentos y colecciones</span><span class="cover-text">Consultas MQL, índices y modelado de documentos en MongoDB.</span><span class="cover-meta">4 trabajos</span></span></a>
+<a class="cover-card" href="/evidencias/proyecto"><img src="/portadas/bountyline.webp" alt="" loading="lazy" /><span class="cover-body"><span class="cover-tag">Proyecto</span><span class="cover-title">BountyLine</span><span class="cover-text">Proyecto final: base de datos híbrida con MySQL y MongoDB.</span><span class="cover-meta">Proyecto final</span></span></a>
+</div>

@@ -153,3 +153,7 @@ a decidir cuándo una solución NoSQL tiene sentido.
    https://cassandra.apache.org/doc/latest/cassandra/developing/data-modeling/intro.html
 5. Neo4j. *Graph database concepts*.  
    https://neo4j.com/docs/getting-started/appendix/graphdb-concepts/
+
+## Detalles
+
+- Fecha: octubre de 2026

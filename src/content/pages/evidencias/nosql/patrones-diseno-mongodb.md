@@ -194,3 +194,7 @@ paso para elegir un diseño adecuado.
    https://www.mongodb.com/docs/manual/data-modeling/design-patterns/archive/
 10. MongoDB. *Time Series Collections*.  
     https://www.mongodb.com/docs/manual/core/timeseries-collections/
+
+## Detalles
+
+- Fecha: noviembre de 2026

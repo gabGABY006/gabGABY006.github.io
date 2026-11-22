@@ -337,6 +337,12 @@ db.movies.dropIndex("idx_punto14");
 
 </div>
 
+## Lo que aprendí
+
+- **El orden de los campos de un índice importa.** Con la regla ESR (*Equality, Sort, Range*) armamos el índice `{ genres, imdb.rating, year }`: primero el campo que se compara por igualdad, luego el de ordenamiento y al final el rango.
+- **`explain("executionStats")` muestra la diferencia real.** Antes del índice el plan era `COLLSCAN` y el motor revisaba toda la colección. Después pasó a `IXSCAN`, y bajaron mucho los documentos examinados y el tiempo de ejecución.
+- **Modelar en MongoDB es decidir según las consultas.** En la parte D diseñamos el modelo documental de una plataforma de domicilios con patrones como Embebido, Referencia, Extended Reference y Computed: las direcciones del cliente van embebidas porque se consultan juntas, y clientes y restaurantes se relacionan por referencia porque crecen por separado.
+
 ## Enlace para compartir el archivo
 
 <a href="/bases-2/taller-mql/consultas.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">

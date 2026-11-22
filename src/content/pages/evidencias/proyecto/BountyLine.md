@@ -97,6 +97,14 @@ Los mensajes siguen otro recorrido: MongoDB guarda un documento por mensaje y pe
 - **Gestión:** [acta de constitución](https://github.com/gabGABY006/BountyLine/blob/main/docs/4.%20Acta%20de%20Constitucion%20BountyLine.pdf) · [informe ejecutivo](https://github.com/gabGABY006/BountyLine/blob/main/docs/10.%20Informe%20Ejecutivo%20Final%20BountyLine.pdf) · [acta de cierre](https://github.com/gabGABY006/BountyLine/blob/main/docs/9.6%20Acta%20de%20Cierre%20de%20Proyecto%20BountyLine.pdf)
 - **Diagramas UML:** [clases](https://github.com/gabGABY006/BountyLine/blob/main/docs/Diagrama%20de%20Clases%20BountyLine.pdf) · [objetos](https://github.com/gabGABY006/BountyLine/blob/main/docs/Diagrama%20de%20Objetos%20BountyLine.pdf) · [paquetes](https://github.com/gabGABY006/BountyLine/blob/main/docs/Diagrama%20de%20Paquetes%20BountyLine.pdf) · [despliegue](https://github.com/gabGABY006/BountyLine/blob/main/docs/Diagrama%20de%20Despliegue%20BountyLine.pdf)
 
+## Lo que aprendí
+
+- **Los conceptos importan más que la sintaxis.** Pasar de PL/SQL en Oracle al lenguaje procedimental de MySQL nos obligó a entender bien excepciones, transacciones y triggers, porque la lógica es la misma pero cambia cómo se declaran los manejadores de error.
+- **La lógica crítica va en la base de datos.** Retener, pagar y reembolsar créditos se hace en procedimientos con `START TRANSACTION`, `COMMIT` y `ROLLBACK`. Así la atomicidad no depende del backend y pudimos quitarle al usuario de la aplicación los permisos de `INSERT`, `UPDATE` y `DELETE`.
+- **Cada motor para lo que mejor hace.** Decidir qué va a MongoDB con criterios claros (volumen, estructura variable y que no necesite transacciones) evitó que la base documental terminara siendo una copia del modelo relacional.
+- **La documentación hay que revisarla contra el código.** Al cerrar encontramos versiones de software y nombres de columnas que ya no coincidían con los scripts. Revisar los documentos antes de cada entrega habría evitado ese trabajo extra.
+- **Las credenciales nunca van en el repositorio.** Desde el inicio es mejor leerlas de variables de entorno.
+
 ## Guía del proyecto
 
 <details class="evidence-drop">

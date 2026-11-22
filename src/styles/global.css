@@ -363,3 +363,96 @@ html.dark {
     transform: translateY(-1px);
     box-shadow: 0 6px 16px var(--shadow-pink);
 }
+
+/* Tarjetas con portada (Evidencias y categorías) */
+.cover-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    gap: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.prose a.cover-card,
+a.cover-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid rgba(228, 94, 160, 0.35);
+    border-radius: 1.25rem;
+    background: var(--panel-pink);
+    box-shadow: 0 10px 26px var(--shadow-pink);
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+a.cover-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 34px var(--shadow-pink);
+}
+
+.cover-card img {
+    margin: 0 !important;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(228, 94, 160, 0.25);
+}
+
+.cover-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 1rem 1.1rem 1.1rem;
+}
+
+.cover-tag {
+    width: fit-content;
+    padding: 0.15rem 0.65rem;
+    border: 1px solid rgba(228, 94, 160, 0.5);
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.cover-title {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+.cover-text {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+.cover-meta {
+    margin-top: auto;
+    padding-top: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #e45ea0;
+}
+
+html.dark .cover-meta {
+    color: #ff9ec9;
+}
+
+/* Tablas y código sin desbordar la pantalla en celular */
+.prose table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.prose pre {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.prose a {
+    overflow-wrap: anywhere;
+}

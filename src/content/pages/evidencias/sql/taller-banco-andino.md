@@ -242,6 +242,13 @@ SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY(format => 'BASIC +COST +ROWS'));
 
 <div class="evidence-video"><iframe title="Video del taller Banco Andino" loading="lazy" src="https://www.youtube-nocookie.com/embed/cFvrH1RSe6Y" allowfullscreen></iframe></div>
 
+## Lo que aprendí
+
+- **Un bloqueo no basta si el cálculo usa un dato viejo.** El bloqueo de fila hizo que una sesión esperara a la otra, pero el banco igual perdió $300.000 porque la segunda sesión ya había calculado el saldo con la lectura anterior. La solución fue leer con `FOR UPDATE` o restar directamente sobre el saldo actual.
+- **La seguridad tiene un precio: la contención.** Mientras una transacción tiene la fila bloqueada, las demás esperan. Por eso el bloqueo pesimista sirve donde hay pocos conflictos por cuenta, y el optimista (con columna de versión) obliga a la aplicación a reintentar cuando el `UPDATE` afecta 0 filas.
+- **Los interbloqueos se evitan con orden.** La regla que habría hecho imposible el `ORA-00060` es bloquear siempre las cuentas en el mismo orden fijo, sin importar cuál es el origen y cuál el destino.
+- **Un índice existe, pero no siempre se usa.** Si la consulta le aplica una función a la columna (por ejemplo `UPPER()` o un `TRUNC` sobre la fecha), el optimizador hace *full scan*. Escribir predicados sargables es tan importante como crear el índice.
+
 ## Enlace para compartir el archivo
 
 <a href="/bases-2/banco-andino/informe.pdf" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
