@@ -21,13 +21,19 @@ type Props = { page: CollectionEntry<'pages'>; back: { href: string; label: stri
 const { page, back } = Astro.props;
 const { title, seo } = page.data;
 const { Content } = await render(page);
+
+// Un sticker distinto según la página (siempre el mismo para la misma página).
+const stickers = ['corazon', 'estrella', 'brillo', 'mono', 'flor'];
+const hash = [...page.id].reduce((acc, c) => acc + c.charCodeAt(0), 0);
+const sticker = stickers[hash % stickers.length];
+const giro = hash % 2 === 0 ? '10deg' : '-10deg';
 ---
 
 <BaseLayout title={seo?.title ?? title} description={seo?.description} image={seo?.image} pageType={seo?.pageType} showHeader={false}>
     <article class="mb-16 sm:mb-24">
         <a href={back.href} class="back-button">← Volver a {back.label}</a>
         <header class="mb-8">
-            <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">{title}</h1>
+            <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl sm:leading-tight">{title}<img src={`/stickers/${sticker}.svg`} class="sticker-inline" style={`--s:2.6rem;--r:${giro}`} alt="" aria-hidden="true" /></h1>
         </header>
         <div class="prose sm:prose-lg max-w-none">
             <Content />

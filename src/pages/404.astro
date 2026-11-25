@@ -7,6 +7,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout title="Página no encontrada" description="Esta página no existe en el portafolio de Gabriella Castro." showHeader={false}>
     <section class="mb-16 flex flex-col items-center text-center sm:mb-24">
         <div class="soft-panel w-full px-6 py-12 sm:px-12 sm:py-16">
+            <img src="/stickers/estrella.svg" class="sticker" style="--s:72px;--r:-12deg;top:-28px;left:-6px" alt="" aria-hidden="true" />
+            <img src="/stickers/brillo.svg" class="sticker" style="--s:60px;--r:10deg;bottom:-20px;right:-6px" alt="" aria-hidden="true" />
             {
                 siteConfig.avatar?.src && (
                     <CustomImage

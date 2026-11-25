@@ -8,6 +8,19 @@ Además, me apasionan varias cosas que me hacen sentir viva y creativa: el croch
 
 Me gusta pensar que la tecnología no tiene por qué verse fría o rígida; también puede ser elegante, divertida y adorable. Por eso me interesa seguir creciendo en diseño, desarrollo y experiencia de usuario, siempre con ese toque más lindo y más auténtico.
 
+## Cosas que amo
+
+Fuera de las bases de datos, esto es lo que me hace sentir viva y creativa.
+
+<div class="loves">
+<figure class="polaroid"><img src="/ilustraciones/crochet.svg" alt="Ilustración: crochet y tejido" loading="lazy" /><figcaption>crochet y tejido</figcaption></figure>
+<figure class="polaroid"><img src="/ilustraciones/formula-1.svg" alt="Ilustración: la Fórmula 1" loading="lazy" /><figcaption>la Fórmula 1</figcaption></figure>
+<figure class="polaroid"><img src="/ilustraciones/dibujo.svg" alt="Ilustración: dibujar" loading="lazy" /><figcaption>dibujar</figcaption></figure>
+<figure class="polaroid"><img src="/ilustraciones/lectura.svg" alt="Ilustración: leer" loading="lazy" /><figcaption>leer</figcaption></figure>
+<figure class="polaroid"><img src="/ilustraciones/musica.svg" alt="Ilustración: la música" loading="lazy" /><figcaption>la música</figcaption></figure>
+<figure class="polaroid"><img src="/ilustraciones/videojuegos.svg" alt="Ilustración: los videojuegos" loading="lazy" /><figcaption>los videojuegos</figcaption></figure>
+</div>
+
 ## Lo que estoy aprendiendo ahora
 
 Después de este semestre quiero seguir profundizando en tres cosas:
