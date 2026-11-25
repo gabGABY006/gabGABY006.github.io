@@ -14,10 +14,10 @@ Cada habilidad lleva a una evidencia donde la puse en práctica.
 
 | Área | Herramientas | Dónde verlo |
 | :-- | :-- | :-- |
-| **SQL** | Oracle, SQL Developer, Oracle Autonomous Database | [JOINS](/evidencias/sql/clase-joins) · [Columnas virtuales](/evidencias/sql/laboratorio-columnas-virtuales) · [Banco Andino](/evidencias/sql/taller-banco-andino) |
-| **Transacciones e índices** | `FOR UPDATE`, bloqueo optimista, `EXPLAIN PLAN` | [Banco Andino](/evidencias/sql/taller-banco-andino) |
-| **PL/SQL** | Procedimientos, funciones, cursores, triggers y paquetes | [Primer script](/evidencias/plsql/primer-script-pl-sql) · [Inventario y ventas](/evidencias/plsql/taller-plsql-grupo-8) · [Tablas mutantes](/evidencias/plsql/investigacion-tablas-mutantes) |
-| **MongoDB** | MongoDB Atlas, MQL, agregaciones, índices | [Taller MQL](/evidencias/nosql/taller-mql) · [Airbnb](/evidencias/nosql/practica-airbnb) · [Patrones de diseño](/evidencias/nosql/patrones-diseno-mongodb) |
+| **SQL** | Oracle, SQL Developer, Oracle Autonomous Database | [JOINS](/evidencias/sql/clase-joins) · [Columnas virtuales](/evidencias/sql/laboratorio-columnas-virtuales) · [Banco Andino](/evidencias/sql/taller-banco-andino) · [Funciones de ventana](/evidencias/sql/investigacion-funciones-ventana) |
+| **Transacciones e índices** | Niveles de aislamiento, `FOR UPDATE`, bloqueo optimista, `EXPLAIN PLAN` | [Banco Andino](/evidencias/sql/taller-banco-andino) · [Niveles de aislamiento](/evidencias/sql/investigacion-niveles-aislamiento) · [Tipos de índices](/evidencias/sql/investigacion-tipos-indices-oracle) |
+| **PL/SQL** | Procedimientos, funciones, cursores, triggers y paquetes | [Primer script](/evidencias/plsql/primer-script-pl-sql) · [Inventario y ventas](/evidencias/plsql/taller-plsql-grupo-8) · [Tablas mutantes](/evidencias/plsql/investigacion-tablas-mutantes) · [BULK COLLECT y FORALL](/evidencias/plsql/investigacion-bulk-collect-forall) · [Excepciones](/evidencias/plsql/investigacion-manejo-excepciones) · [Paquetes](/evidencias/plsql/investigacion-paquetes-plsql) |
+| **MongoDB** | MongoDB Atlas, MQL, agregaciones, índices | [Taller MQL](/evidencias/nosql/taller-mql) · [Airbnb](/evidencias/nosql/practica-airbnb) · [Patrones de diseño](/evidencias/nosql/patrones-diseno-mongodb) · [Transacciones](/evidencias/nosql/investigacion-transacciones-mongodb) · [Agregación](/evidencias/nosql/investigacion-pipeline-agregacion) · [Índices](/evidencias/nosql/investigacion-indices-mongodb) |
 | **MySQL** | Procedimientos, triggers y transacciones | [BountyLine](/evidencias/proyecto/bountyline) |
 | **Modelado de datos** | Modelo ER, modelo relacional, diccionario de datos, modelo documental | [BountyLine · Fase 1](/evidencias/proyecto/bountyline/fase-1) |
 
