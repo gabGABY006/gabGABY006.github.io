@@ -4,6 +4,25 @@ import videoIntro from '../assets/images/video_intro.mp4';
 import Button from '../components/Button.astro';
 import siteConfig from '../data/site-config';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Números del portafolio: se calculan solos a partir de las páginas de evidencias.
+const pages = await getCollection('pages');
+const evidencias = pages.filter((p) => /^evidencias\/[^/]+\/[^/]+$/.test(p.id));
+const investigaciones = evidencias.filter((p) => p.id.includes('/investigacion-') || p.data.title.startsWith('Investigación'));
+const numeros = [
+    { valor: evidencias.length, texto: 'evidencias' },
+    { valor: investigaciones.length, texto: 'investigaciones' },
+    { valor: 3, texto: 'motores de bases de datos' },
+    { valor: 1, texto: 'proyecto final' }
+];
+
+// Novedades de la página de inicio: para cambiarlas, edita esta lista.
+const recientes = [
+    { href: '/evidencias/proyecto/bountyline/cierre', img: 'bountyline', tag: 'Proyecto', titulo: 'Cierre de BountyLine', texto: 'Informe ejecutivo y acta de cierre del proyecto final.' },
+    { href: '/evidencias/nosql/investigacion-indices-mongodb', img: 'indices-mongodb', tag: 'NoSQL', titulo: 'Índices en MongoDB y la regla ESR', texto: 'Compuestos, multikey, TTL y el orden Equality, Sort, Range.' },
+    { href: '/evidencias/plsql/investigacion-paquetes-plsql', img: 'paquetes-plsql', tag: 'PL/SQL', titulo: 'Paquetes en PL/SQL', texto: 'Especificación, cuerpo, sobrecarga y estado del paquete.' }
+];
 ---
 
 <BaseLayout description={siteConfig.description}>
@@ -50,6 +69,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
     </section>
 
+    <section class="mb-14 sm:mb-20" aria-label="El portafolio en números">
+        <div class="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
+            {
+                numeros.map((n) => (
+                    <div class="soft-panel px-4 py-5 text-center">
+                        <p class="font-serif text-4xl leading-none text-[#e45ea0] sm:text-5xl dark:text-[#ff9ec9]">{n.valor}</p>
+                        <p class="mt-2 text-xs leading-snug font-semibold uppercase tracking-[0.14em] text-main/75">{n.texto}</p>
+                    </div>
+                ))
+            }
+        </div>
+    </section>
+
     <section class="mb-14 sm:mb-20">
         <div class="mb-6">
             <p class="mb-2 text-xs font-medium uppercase tracking-[0.25em] text-main/70">Proyecto destacado</p>
@@ -79,6 +111,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                 <span class="mt-4 inline-block rounded-full bg-[#f472b6] px-5 py-2.5 font-semibold text-white">Ver el proyecto →</span>
             </div>
         </a>
+    </section>
+
+    <section class="mb-14 sm:mb-20">
+        <div class="mb-6">
+            <p class="mb-2 text-xs font-medium uppercase tracking-[0.25em] text-main/70">Novedades</p>
+            <h2 class="font-serif text-2xl italic sm:text-3xl">Lo más reciente</h2>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-3">
+            {
+                recientes.map((r) => (
+                    <a class="cover-card" href={r.href}>
+                        <img src={`/portadas/${r.img}.webp`} alt="" loading="lazy" />
+                        <span class="cover-body">
+                            <span class="cover-tag">{r.tag}</span>
+                            <span class="cover-title">{r.titulo}</span>
+                            <span class="cover-text">{r.texto}</span>
+                        </span>
+                    </a>
+                ))
+            }
+        </div>
     </section>
 
     <section class="mb-16 sm:mb-24">
