@@ -361,6 +361,10 @@ db.movies.dropIndex("idx_punto14");
   Ver MQL en GitHub
 </a>
 
+<a href="/evidencias/nosql/sustentacion-taller-mql" style="display: inline-block; padding: 0.7rem 1.2rem; background: #f472b6; color: white; border-radius: 999px; text-decoration: none; font-weight: 600; margin-top: 0.5rem;">
+  Ver la sustentación
+</a>
+
 ## Detalles
 
 - Fecha: 03/11/2026
